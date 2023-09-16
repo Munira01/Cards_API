@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cards{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+
+
+    .card1{
+        padding: 10px;
+        border: 2px solid lightgreen;
+        
+        
+        &:hover{
+            box-shadow: 5px 5px 18px 0px lightgreen;
+        }
+
+        border-radius: 20px;
+
+        .cImg{
+            border-radius: 20px;
+            height: 60%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .cTitle{
+            padding: 10px;
+        }
+
+        .prCat{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            .cPrice{
+                background-color: lightgreen;
+                padding: 10px;
+                border-radius: 20%;
+            }
+
+            .cCategory{
+                background-color: lightgreen;
+                padding: 10px;
+                border-radius: 20%;
+            }
+        }
+    }
+}
